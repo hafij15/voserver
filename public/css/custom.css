@@ -1,0 +1,750 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+* {
+    outline: none;
+}
+
+a *:focus {
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+}
+
+.bg-dark {
+    background: #333;
+    padding-top: 64px;
+}
+
+.navbar-brand {
+    height: 0;
+    padding: 0;
+}
+
+.d-inline {
+    display: inline-block;
+}
+
+.float-right {
+    float: right;
+}
+
+.pt-3 {
+    padding-top: 15px;
+}
+
+.pb-3 {
+    padding-bottom: 15px;
+}
+
+.mt-3 {
+    margin-top: 15px;
+}
+
+.mb-3 {
+    margin-bottom: 15px;
+}
+
+.in-group {
+    float: left;
+    width: 100%;
+}
+
+.in-group input {
+    width: calc(100% - 49px);
+    background: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 7px;
+}
+
+#followUpDate,
+#followUpDateRes,
+.patient-field input {
+    background: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 7px;
+    width: 100%;
+    box-shadow: 0 0 5px;
+}
+
+body {
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+.call-bar small {
+    color: #43ffff;
+}
+
+.call-bar button.call-btn {
+    color: #43ffff;
+    border: 1px solid;
+    -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
+}
+
+.call-bar button.call-btn:hover {
+    color: #00ffff;
+    background: rgba(67, 255, 255, 0.3);
+}
+
+.room-id-div .custom-tooltip {
+    display: none;
+    background: #fff;
+    position: absolute;
+    top: 70px;
+    right: 15px;
+    padding: 15px;
+    border-radius: 4px;
+}
+
+.room-id-div .fa-caret-up {
+    display: none;
+    position: absolute;
+    color: #fff;
+    top: 51px;
+    right: 30px;
+    font-size: 30px;
+}
+
+#videoContainer {
+    position: relative;
+    height: calc(100vh - 148px);
+    margin-bottom: 15px;
+    text-align: center;
+    /* background-color: #333; */
+    /* Internet Explorer 10 */
+    display: -ms-flexbox;
+    -ms-flex-pack: center;
+    -ms-flex-align: center;
+    /* Firefox */
+    display: -moz-box;
+    -moz-box-pack: center;
+    -moz-box-align: center;
+    /* Safari, Opera, and Chrome */
+    display: -webkit-box;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+    /* W3C */
+    display: box;
+    box-pack: center;
+    box-align: center;
+    overflow: hidden;
+}
+
+video {
+    width: 100%;
+    height: calc(100vh - 148px);
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+.bottom-call-bar {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    z-index: 9;
+    display: block;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.bottom-call-bar button {
+    display: none;
+    border-radius: 50% !important;
+    margin: 0 10px;
+    width: 50px;
+    height: 50px;
+    -webkit-box-shadow: 0 0 10px rgb(100, 100, 100);
+    box-shadow: 0 0 10px rgb(100, 100, 100);
+}
+
+.bottom-call-bar button:focus {
+    border: none !important;
+    background-color: #00b0e4 !important;
+}
+
+#chatBox {
+    height: calc(100vh - 143px);
+    border-radius: 5px;
+    padding: 5px 15px 15px;
+    overflow-y: auto;
+    background: url(../img/pattern_bg.jpg);
+    background-size: 70%;
+    position: relative;
+    -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
+}
+
+#chatBoxResponsive {
+    height: calc(100vh - 140px);
+    border-radius: 5px;
+    padding: 15px;
+    overflow-y: auto;
+    background-image: url(../img/pattern_bg.jpg);
+    background-size: 70%;
+    -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
+}
+
+.single-chat-div {
+    position: relative;
+    z-index: 999;
+}
+
+#sendMessageBtn,
+#sendMessageBtnRes,
+#sendVitalBtn,
+#sendVitalBtnRes,
+#saveVitalDataBtn,
+#sendPrescriptionBtn,
+#sendPrescriptionBtnRes,
+#leave-btn,
+#mute-btn,
+#video-btn {
+    color: #fff !important;
+}
+
+#leave-btn:disabled,
+#mute-btn:disabled {
+    color: #666 !important;
+}
+
+#sendMessageBtn,
+#sendMessageBtnRes,
+#sendVitalBtn,
+#sendVitalBtnRes,
+#saveVitalDataBtn,
+#sendPrescriptionBtn,
+#sendPrescriptionBtnRes {
+    padding: 7px;
+    border-radius: 4px;
+    border: none;
+    background: #00b0e4;
+    width: 100%;
+}
+
+#sendMessageBtn:disabled,
+#sendMessageBtnRes:disabled,
+#sendVitalBtn:disabled,
+#sendVitalBtnRes:disabled,
+#saveVitalDataBtn:disabled,
+#sendPrescriptionBtn:disabled,
+#sendPrescriptionBtnRes:disabled {
+    background-color: #ccc;
+    border: none;
+}
+
+.chat-box-holder div textarea:disabled {
+    background-color: #fff;
+}
+
+.received-msg-para {
+    background: rgb(194, 252, 213);
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 12px;
+    max-width: 80%;
+    word-wrap: break-word;
+    -webkit-box-shadow: -1px 2px 2px rgba(0, 0, 0, 0.2);
+    box-shadow: -1px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.sent-msg-para {
+    background: rgb(178, 233, 255);
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 12px;
+    max-width: 80%;
+    word-wrap: break-word;
+    -webkit-box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.2);
+    box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+#userConnectedModalBtn {
+    background: #fff;
+    border-radius: 25px;
+    color: #888;
+    padding: 9px 12px;
+}
+
+#userConnectedModalBtn span {
+    padding: 0 10px;
+}
+
+#userConnectedModalBtn .fas {
+    font-size: 13px;
+}
+
+.chat-box-responsive {
+    position: absolute;
+    top: 61px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999999;
+    display: none;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.6);
+    height: 100vh;
+}
+
+#chatClose {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    background: #fff !important;
+    border: none;
+    border-radius: 50px;
+    -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    color: #666;
+    height: 36px;
+    width: 36px;
+    padding: 0;
+    z-index: 9999;
+}
+
+#historyClose {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    opacity: 0.7;
+    background: #fff !important;
+    border: none;
+    border-radius: 50px;
+    -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    color: #666;
+    height: 36px;
+    width: 36px;
+    padding: 0;
+    z-index: 9999;
+    display: none;
+}
+
+#userConnectedModalBtn {
+    display: none;
+}
+
+.media img {
+    width: 30px;
+}
+
+.call-bar .btn-link {
+    font-weight: 400;
+    color: #fa7c22;
+    border-radius: 10px;
+    padding: 2.7px 15px;
+    font-size: 22px;
+    /* border-left: 0;
+    border-right: 0;
+    border-bottom: 1px solid;
+    border-top: 1px solid;
+    -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.9); */
+}
+
+.call-bar .btn-link i {
+    filter: drop-shadow(0 0 5px #000);
+}
+
+.call-bar .btn-link:hover {
+    color: #ccc;
+    background: none;
+}
+
+#widget-container {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: -9999;
+    visibility: hidden;
+}
+
+#widget-container button {
+    position: absolute;
+    right: 16px;
+    top: -35px;
+    padding-bottom: 3px;
+    z-index: 999;
+    width: 35px;
+    background-color: #fff;
+    height: 35px;
+    border-radius: 50px;
+    -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+
+#widget-container iframe {
+    width: calc(100% - 15px);
+    height: calc(100% - 15px);
+    border: 0px;
+    position: absolute;
+    left: 50%;
+    top: -50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    opacity: 0;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.custom-alert-inactive {
+    position: absolute;
+    bottom: 0;
+    left: 315px;
+    width: auto;
+    background: #fff;
+    padding: 7px 15px;
+    border-radius: 4px;
+    opacity: 0;
+    -webkit-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s;
+    display: none;
+}
+
+.custom-alert-active {
+    position: absolute;
+    bottom: 100px;
+    left: 315px;
+    width: auto;
+    background: #fff;
+    padding: 7px 15px;
+    border-radius: 4px;
+    opacity: 1;
+    -webkit-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s;
+}
+
+#duration {
+    color: #bbb;
+    display: none;
+    vertical-align: middle;
+    margin-left: 15px;
+}
+
+.connection-lost-msg {
+    width: 150px;
+    height: 150px;
+    padding: 35px 0;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+    color: #ddd;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    display: none;
+    z-index: 99999;
+    display: inline-block;
+    border-radius: 50%;
+}
+
+.connection-lost-msg .fa-wave-square {
+    font-size: 30px;
+}
+
+.local-video video {
+    height: 38px;
+    width: 66px;
+    vertical-align: middle;
+}
+
+#chat-btn {
+    display: none !important;
+}
+
+.chat-box-holder {
+    display: block !important;
+}
+
+.chat-box-holder div {
+    position: relative;
+}
+
+.chat-box-holder div label {
+    position: absolute;
+    top: 4px;
+    left: 15px;
+    background: #fff;
+    border-radius: 4px;
+    padding: 0 5px;
+}
+
+.chat-box-holder div textarea {
+    width: 100%;
+    height: 35px;
+    border: none;
+    -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
+    border-radius: 4px;
+    padding: 10px 15px 10px;
+}
+
+#paitentHistory,
+#doctorHistoryPrescription,
+#vitalSign,
+#prescription {
+    position: absolute;
+    z-index: 999;
+    top: 200px;
+    width: 300px;
+    height: calc(100vh - 200px);
+    background: #fdfdfd;
+    left: 0;
+    padding: 15px;
+    overflow-y: auto;
+}
+
+#vitalSign {
+    left: -300px;
+}
+
+#prescription {
+    display: none;
+}
+
+#openHistoryBtn,
+#openRxBtn {
+    display: none;
+}
+
+#paitentHistory img,
+#doctorHistoryPrescription img {
+    border-radius: 50%;
+}
+
+#paitentHistory pre,
+#vitalSign pre,
+#doctorHistoryPrescription pre {
+    white-space: break-spaces;
+}
+
+#paitentHistory p,
+#vitalSign p,
+#doctorHistoryPrescription p {
+    margin: 0;
+}
+
+.backbtn {
+    position: absolute;
+    top: 20px;
+    right: 15px;
+    z-index: 999;
+    background: #fff !important;
+    color: #333;
+    transition: 0.3s;
+}
+
+.homebtn {
+    position: absolute;
+    top: 25px;
+    right: 15px;
+    z-index: 999;
+}
+
+a.homebtn:hover {
+    cursor: pointer;
+}
+
+.backbtn:hover,
+.backbtn:active,
+.backbtn:focus {
+    background: #eee !important;
+    color: #000;
+    transition: 0.3s;
+}
+
+.backbtn .fa-caret-left {
+    font-size: 14px !important;
+}
+
+@keyframes info-icon-blink {
+    from {
+        font-size: 14px;
+    }
+
+    to {
+        font-size: 16px;
+    }
+}
+
+.diagnosis-div label {
+    width: 92px;
+}
+
+.medicine-div label {
+    width: 40px;
+}
+
+.diagnosis-div .fa-info-circle,
+.medicine-div .fa-info-circle {
+    color: lightseagreen;
+    animation-name: info-icon-blink;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+td>span {
+    display: none;
+}
+
+.session-wellcome-msg {
+    color: #aaa;
+    display: none;
+}
+
+@media screen and (min-width: 300px) and (max-width: 768px) {
+
+    th,
+    td {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    td span {
+        font-weight: bold;
+        display: block;
+        margin-right: 2.5%;
+    }
+
+    th {
+        display: none;
+    }
+
+    .call-bar button {
+        font-size: 12px;
+        padding: 3px;
+    }
+
+    .bg-dark {
+        padding-top: 33px;
+    }
+
+    #videoContainer {
+        height: calc(100vh - 147px);
+    }
+
+    /* .local-video video {
+        height: 80px;
+        width: 65px;
+        position: absolute;
+        top: 57px;
+        z-index: 9;
+        -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    } */
+
+    .call-bar .btn-link {
+        padding: 4px 10px;
+    }
+
+    #duration {
+        font-size: 10px;
+        margin: 0;
+    }
+
+    #chat-btn,
+    #historyClose {
+        display: inline-block !important;
+    }
+
+    .chat-box-holder {
+        display: none !important;
+    }
+
+    #prescription,
+    #vitalSign {
+        display: unset;
+    }
+
+    #prescription .chat-box-holder {
+        display: unset !important;
+    }
+
+    #vitalSign .chat-box-holder {
+        display: unset !important;
+    }
+
+    #userConnectedModalBtn {
+        padding: 4px 12px;
+    }
+
+    #paitentHistory,
+    #doctorHistoryPrescription,
+    #vitalSign,
+    #prescription {
+        left: -300px;
+        top: 61px;
+        height: calc(100vh - 61px);
+        -webkit-transition: 0.3s;
+        -o-transition: 0.3s;
+        transition: 0.3s;
+    }
+
+    #openHistoryBtn,
+    #openRxBtn {
+        display: inline-block;
+    }
+
+    #userConnectedModalBtn {
+        padding: 4px;
+    }
+
+    .chat-box-holder {
+        display: none !important;
+    }
+
+    .backbtn {
+        right: 15px;
+        top: 15px !important;
+    }
+
+    .navbar-header img {
+        margin-left: 40px;
+    }
+
+    .bottom-call-bar button {
+        width: 40px;
+        height: 40px;
+    }
+
+    .btn:not(.btn-link):not(.btn-circle) i {
+        font-size: 14px;
+    }
+
+    .chat-box-holder div textarea,
+    .patient-field input,
+    #followUpDate,
+    #followUpDateRes {
+        box-shadow: none !important;
+        border: 1px solid gray;
+    }
+
+    .custom-alert-active,
+    .custom-alert-inactive {
+        left: 15px !important;
+    }
+}
